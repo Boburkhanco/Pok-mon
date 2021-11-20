@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Pokémon</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header-part">
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <div class="header">
+                <div class="header__logo">
+                    <img src="./Images/pokemon-go.png" alt="">
+                </div>
+                <div class="header__title">
+                    <h2>Play Better, Get More Likes</h2>
+                    <div id="like-counter" class="likes-counter">0</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-body">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

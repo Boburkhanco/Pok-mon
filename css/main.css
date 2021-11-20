@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-part{
+    background-image: url('./../Images/pokemon-bg.webp');
+}
+.clock{
+    font-family:'paytone one', serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    margin-right: 20px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header__logo img {
+    width: 200px;
+}
+.header__title {
+    font-family: 'paytone one' , courier;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.likes-counter {
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.main-body{
+    background: linear-gradient(210deg , teal, rgb(0, 255, 179));
+    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.list:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.713);
+}
+.list__name{
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.like-button{
+    width: 80px;
+    height: 40px;
+    background-color: teal;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    color: transparent;
+}
+.liked-first{
+    background-image: url("./../Images/thumbs-up.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+.like-btn__bg-like{
+    background-image: url("./../Images/thumbs-up.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: all .3s ease-in-out;
+}
+.like-btn__bg-dislike{
+    background-image: url("./../Images/thumbs-down.svg");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: all .3s ease-in-out;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header__title{
+        max-width: 200px;
+        align-items: flex-start;
+    }
+}
+
+
+ @media only screen and (max-width: 600px) {
+     .header__logo img{
+         width: 150px;
+     }
+     .header{
+         flex-direction: column;
+         padding-bottom: 10px;
+     }
+     .header__title{
+         align-items: center;
+         max-width: 100%;
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+ }
